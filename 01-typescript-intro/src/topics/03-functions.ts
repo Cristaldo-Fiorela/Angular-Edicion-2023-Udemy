@@ -20,3 +20,25 @@ function multiply( firstNumber: number, secondNumber?: number, base: number = 2)
 
 const muliplyResult: number = multiply(5);
 
+
+interface Character {
+    name: string;
+    hp: number;
+    showHp: () => void; // indicar en interface las funciones
+}
+
+const healCharacter = (character: Character, amount: number) => {
+    character.hp += amount;
+}
+
+const strider: Character = {
+    name: 'Aaragon',
+    hp: 50,
+    showHp() {
+        console.log(`Puntos de vida ${this.hp}`)
+    }
+}
+
+strider.showHp(); //50
+healCharacter(strider, 30);
+strider.showHp(); // 80
