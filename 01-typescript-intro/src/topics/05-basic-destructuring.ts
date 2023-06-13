@@ -33,3 +33,5 @@ console.log('Author:', author);
 const [, , bulma = 'Not Found']: string[] = ['Goku', 'Vegetta', 'Bulma'];
 
 console.log('Personaje 3:', bulma);
+
+export{};
