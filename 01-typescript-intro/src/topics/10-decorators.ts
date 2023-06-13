@@ -1,3 +1,6 @@
+// DECORADORES
+// No son mas que funciones que pueden modificar el comportamiendo de clases, propiedades y metodos
+
 function classDecorator<T extends {new (...args:any[]): {} }>( constructor: T ) {
     return class extends constructor {
         newProperty = 'New Property';
