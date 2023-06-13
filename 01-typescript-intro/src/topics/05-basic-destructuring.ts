@@ -26,3 +26,10 @@ const { author} =  details;
 console.log('Song:', audioPlayer.song);
 console.log('Song:', anotherSong);
 console.log('Author:', author);
+
+
+// Destructuracion de Arrays
+
+const [, , bulma = 'Not Found']: string[] = ['Goku', 'Vegetta', 'Bulma'];
+
+console.log('Personaje 3:', bulma);
