@@ -13,7 +13,8 @@ import { AddCharacterComponent } from './components/add-character/add-character.
     AddCharacterComponent,
   ],
   exports: [
-    MainPageComponent
+    MainPageComponent,
+    AddCharacterComponent
   ],
   imports: [
     CommonModule,

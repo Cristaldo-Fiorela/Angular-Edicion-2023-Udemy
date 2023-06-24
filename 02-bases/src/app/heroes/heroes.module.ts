@@ -3,18 +3,20 @@ import { CommonModule } from "@angular/common";
 
 import { HeroComponent } from "./hero/hero.component";
 import { ListComponent } from "./list/list.component";
+import { DbzModule } from "../dbz/dbz.module";
 
 @NgModule({
-    declarations: [
+    declarations: [ // aquí se declaran los componentes, directivas y pipes que pertenecen a este módulo
         HeroComponent,
         ListComponent
     ],
-    exports:[
+    exports:[ // cosas que que se exportan para utilizar externamente del modulo
         HeroComponent,
         ListComponent
     ],
-    imports: [
-        CommonModule
+    imports: [ // cosas que se importan para utilizar en el modulo
+        CommonModule,
+        DbzModule
     ]
 })
 export class HeroesModule {}
