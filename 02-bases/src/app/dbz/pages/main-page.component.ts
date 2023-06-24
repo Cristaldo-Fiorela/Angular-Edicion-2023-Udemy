@@ -22,7 +22,10 @@ export class MainPageComponent {
     ];
 
     onNewCharacterMain(character: Character): void {
-        console.log('MainPage');
-        console.log(character);
+        this.characters.push(character);
+    }
+
+    onDeleteCharacter( ) {
+        this.characters.splice
     }
 }
